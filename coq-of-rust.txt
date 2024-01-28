@@ -945,6 +945,98 @@ warning: Constants in patterns are not yet supported.
 
 thread 'rustc' panicked at lib/src/expression.rs:710:21:
 attempted to read from stolen value: rustc_middle::thir::Thir
-note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+stack backtrace:
+   0: rust_begin_unwind
+             at /rustc/de686cbc65478db53e3d51c52497685e852cc092/library/std/src/panicking.rs:645:5
+   1: core::panicking::panic_fmt
+             at /rustc/de686cbc65478db53e3d51c52497685e852cc092/library/core/src/panicking.rs:72:14
+   2: rustc_data_structures::steal::Steal<T>::borrow
+             at /rustc/de686cbc65478db53e3d51c52497685e852cc092/compiler/rustc_data_structures/src/steal.rs:38:13
+   3: coq_of_rust_lib::expression::compile_hir_id
+             at /mnt/data1/2024/01/27/coq-of-rust/lib/src/expression.rs:710:16
+   4: coq_of_rust_lib::top_level::compile_top_level_item
+             at /mnt/data1/2024/01/27/coq-of-rust/lib/src/top_level.rs:410:29
+   5: coq_of_rust_lib::top_level::compile_top_level_item::{{closure}}
+             at /mnt/data1/2024/01/27/coq-of-rust/lib/src/top_level.rs:458:25
+   6: core::ops::function::impls::<impl core::ops::function::FnOnce<A> for &mut F>::call_once
+             at /rustc/de686cbc65478db53e3d51c52497685e852cc092/library/core/src/ops/function.rs:305:13
+   7: core::option::Option<T>::map
+             at /rustc/de686cbc65478db53e3d51c52497685e852cc092/library/core/src/option.rs:1072:29
+   8: <core::iter::adapters::map::Map<I,F> as core::iter::traits::iterator::Iterator>::next
+             at /rustc/de686cbc65478db53e3d51c52497685e852cc092/library/core/src/iter/adapters/map.rs:104:26
+   9: <core::iter::adapters::fuse::Fuse<I> as core::iter::adapters::fuse::FuseImpl<I>>::next
+             at /rustc/de686cbc65478db53e3d51c52497685e852cc092/library/core/src/iter/adapters/fuse.rs:355:9
+  10: <core::iter::adapters::fuse::Fuse<I> as core::iter::traits::iterator::Iterator>::next
+             at /rustc/de686cbc65478db53e3d51c52497685e852cc092/library/core/src/iter/adapters/fuse.rs:46:9
+  11: <core::iter::adapters::flatten::FlattenCompat<I,U> as core::iter::traits::iterator::Iterator>::next
+             at /rustc/de686cbc65478db53e3d51c52497685e852cc092/library/core/src/iter/adapters/flatten.rs:601:29
+  12: <core::iter::adapters::flatten::FlatMap<I,U,F> as core::iter::traits::iterator::Iterator>::next
+             at /rustc/de686cbc65478db53e3d51c52497685e852cc092/library/core/src/iter/adapters/flatten.rs:58:9
+  13: alloc::vec::Vec<T,A>::extend_desugared
+             at /rustc/de686cbc65478db53e3d51c52497685e852cc092/library/alloc/src/vec/mod.rs:2891:35
+  14: <alloc::vec::Vec<T,A> as alloc::vec::spec_extend::SpecExtend<T,I>>::spec_extend
+             at /rustc/de686cbc65478db53e3d51c52497685e852cc092/library/alloc/src/vec/spec_extend.rs:17:9
+  15: <alloc::vec::Vec<T> as alloc::vec::spec_from_iter_nested::SpecFromIterNested<T,I>>::from_iter
+             at /rustc/de686cbc65478db53e3d51c52497685e852cc092/library/alloc/src/vec/spec_from_iter_nested.rs:43:9
+  16: <alloc::vec::Vec<T> as alloc::vec::spec_from_iter::SpecFromIter<T,I>>::from_iter
+             at /rustc/de686cbc65478db53e3d51c52497685e852cc092/library/alloc/src/vec/spec_from_iter.rs:33:9
+  17: <alloc::vec::Vec<T> as core::iter::traits::collect::FromIterator<T>>::from_iter
+             at /rustc/de686cbc65478db53e3d51c52497685e852cc092/library/alloc/src/vec/mod.rs:2791:9
+  18: core::iter::traits::iterator::Iterator::collect
+             at /rustc/de686cbc65478db53e3d51c52497685e852cc092/library/core/src/iter/traits/iterator.rs:2054:9
+  19: coq_of_rust_lib::top_level::compile_top_level_item
+             at /mnt/data1/2024/01/27/coq-of-rust/lib/src/top_level.rs:454:17
+  20: coq_of_rust_lib::top_level::compile_top_level::{{closure}}
+             at /mnt/data1/2024/01/27/coq-of-rust/lib/src/top_level.rs:1083:17
+  21: core::ops::function::impls::<impl core::ops::function::FnOnce<A> for &mut F>::call_once
+             at /rustc/de686cbc65478db53e3d51c52497685e852cc092/library/core/src/ops/function.rs:305:13
+  22: core::option::Option<T>::map
+             at /rustc/de686cbc65478db53e3d51c52497685e852cc092/library/core/src/option.rs:1072:29
+  23: <core::iter::adapters::map::Map<I,F> as core::iter::traits::iterator::Iterator>::next
+             at /rustc/de686cbc65478db53e3d51c52497685e852cc092/library/core/src/iter/adapters/map.rs:104:26
+  24: <core::iter::adapters::fuse::Fuse<I> as core::iter::adapters::fuse::FuseImpl<I>>::next
+             at /rustc/de686cbc65478db53e3d51c52497685e852cc092/library/core/src/iter/adapters/fuse.rs:355:9
+  25: <core::iter::adapters::fuse::Fuse<I> as core::iter::traits::iterator::Iterator>::next
+             at /rustc/de686cbc65478db53e3d51c52497685e852cc092/library/core/src/iter/adapters/fuse.rs:46:9
+  26: <core::iter::adapters::flatten::FlattenCompat<I,U> as core::iter::traits::iterator::Iterator>::next
+             at /rustc/de686cbc65478db53e3d51c52497685e852cc092/library/core/src/iter/adapters/flatten.rs:601:29
+  27: <core::iter::adapters::flatten::FlatMap<I,U,F> as core::iter::traits::iterator::Iterator>::next
+             at /rustc/de686cbc65478db53e3d51c52497685e852cc092/library/core/src/iter/adapters/flatten.rs:58:9
+  28: alloc::vec::Vec<T,A>::extend_desugared
+             at /rustc/de686cbc65478db53e3d51c52497685e852cc092/library/alloc/src/vec/mod.rs:2891:35
+  29: <alloc::vec::Vec<T,A> as alloc::vec::spec_extend::SpecExtend<T,I>>::spec_extend
+             at /rustc/de686cbc65478db53e3d51c52497685e852cc092/library/alloc/src/vec/spec_extend.rs:17:9
+  30: <alloc::vec::Vec<T> as alloc::vec::spec_from_iter_nested::SpecFromIterNested<T,I>>::from_iter
+             at /rustc/de686cbc65478db53e3d51c52497685e852cc092/library/alloc/src/vec/spec_from_iter_nested.rs:43:9
+  31: <alloc::vec::Vec<T> as alloc::vec::spec_from_iter::SpecFromIter<T,I>>::from_iter
+             at /rustc/de686cbc65478db53e3d51c52497685e852cc092/library/alloc/src/vec/spec_from_iter.rs:33:9
+  32: <alloc::vec::Vec<T> as core::iter::traits::collect::FromIterator<T>>::from_iter
+             at /rustc/de686cbc65478db53e3d51c52497685e852cc092/library/alloc/src/vec/mod.rs:2791:9
+  33: core::iter::traits::iterator::Iterator::collect
+             at /rustc/de686cbc65478db53e3d51c52497685e852cc092/library/core/src/iter/traits/iterator.rs:2054:9
+  34: coq_of_rust_lib::top_level::compile_top_level
+             at /mnt/data1/2024/01/27/coq-of-rust/lib/src/top_level.rs:1079:9
+  35: coq_of_rust_lib::top_level::top_level_to_coq
+             at /mnt/data1/2024/01/27/coq-of-rust/lib/src/top_level.rs:1106:21
+  36: <coq_of_rust_lib::callbacks::ToCoq as rustc_driver_impl::Callbacks>::after_expansion::{{closure}}
+             at /mnt/data1/2024/01/27/coq-of-rust/lib/src/callbacks.rs:35:17
+  37: rustc_middle::ty::context::GlobalCtxt::enter::{{closure}}
+             at /rustc/de686cbc65478db53e3d51c52497685e852cc092/compiler/rustc_middle/src/ty/context.rs:673:37
+  38: rustc_middle::ty::context::tls::enter_context::{{closure}}
+             at /rustc/de686cbc65478db53e3d51c52497685e852cc092/compiler/rustc_middle/src/ty/context/tls.rs:82:9
+  39: std::thread::local::LocalKey<T>::try_with
+             at /rustc/de686cbc65478db53e3d51c52497685e852cc092/library/std/src/thread/local.rs:270:16
+  40: std::thread::local::LocalKey<T>::with
+             at /rustc/de686cbc65478db53e3d51c52497685e852cc092/library/std/src/thread/local.rs:246:9
+  41: rustc_middle::ty::context::tls::enter_context
+             at /rustc/de686cbc65478db53e3d51c52497685e852cc092/compiler/rustc_middle/src/ty/context/tls.rs:79:9
+  42: rustc_middle::ty::context::GlobalCtxt::enter
+             at /rustc/de686cbc65478db53e3d51c52497685e852cc092/compiler/rustc_middle/src/ty/context.rs:673:9
+  43: rustc_interface::queries::QueryResult<&rustc_middle::ty::context::GlobalCtxt>::enter
+             at /rustc/de686cbc65478db53e3d51c52497685e852cc092/compiler/rustc_interface/src/queries.rs:71:9
+  44: <coq_of_rust_lib::callbacks::ToCoq as rustc_driver_impl::Callbacks>::after_expansion
+             at /mnt/data1/2024/01/27/coq-of-rust/lib/src/callbacks.rs:29:40
+  45: rustc_interface::interface::run_compiler::<core::result::Result<(), rustc_span::ErrorGuaranteed>, rustc_driver_impl::run_compiler::{closure#0}>::{closure#0}
+note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
 warning: `serde_json` (lib) generated 143 warnings
 error: could not compile `serde_json` (lib); 143 warnings emitted

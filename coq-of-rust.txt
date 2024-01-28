@@ -1,0 +1,950 @@
+Compiling create build_script_build
+Warnning: Current working directory: /mnt/data1/2024/01/28/json
+  Could not read configuration file: coq-of-rust-config.json
+Warnning: Current working directory: /mnt/data1/2024/01/28/json
+  Could not read configuration file: coq-of-rust-config.json
+warning: Constants in patterns are not yet supported.
+  --> build.rs:10:9
+   |
+10 |         "aarch64" | "mips64" | "powerpc64" | "x86_64" | "loongarch64" => {
+   |         ^^^^^^^^^
+
+warning: Constants in patterns are not yet supported.
+  --> build.rs:10:21
+   |
+10 |         "aarch64" | "mips64" | "powerpc64" | "x86_64" | "loongarch64" => {
+   |                     ^^^^^^^^
+
+warning: Constants in patterns are not yet supported.
+  --> build.rs:10:32
+   |
+10 |         "aarch64" | "mips64" | "powerpc64" | "x86_64" | "loongarch64" => {
+   |                                ^^^^^^^^^^^
+
+warning: Constants in patterns are not yet supported.
+  --> build.rs:10:46
+   |
+10 |         "aarch64" | "mips64" | "powerpc64" | "x86_64" | "loongarch64" => {
+   |                                              ^^^^^^^^
+
+warning: Constants in patterns are not yet supported.
+  --> build.rs:10:57
+   |
+10 |         "aarch64" | "mips64" | "powerpc64" | "x86_64" | "loongarch64" => {
+   |                                                         ^^^^^^^^^^^^^
+
+warning: `serde_json` (build script) generated 5 warnings
+    Checking serde_json v1.0.112 (/mnt/data1/2024/01/28/json)
+Compiling create serde_json
+Warnning: Current working directory: /mnt/data1/2024/01/28/json
+  Could not read configuration file: coq-of-rust-config.json
+Warnning: Current working directory: /mnt/data1/2024/01/28/json
+  Could not read configuration file: coq-of-rust-config.json
+warning: Constants in patterns are not yet supported.
+   --> src/de.rs:252:22
+    |
+252 |                 Some(b' ' | b'\n' | b'\t' | b'\r') => {
+    |                      ^^^^
+
+warning: Constants in patterns are not yet supported.
+   --> src/de.rs:252:29
+    |
+252 |                 Some(b' ' | b'\n' | b'\t' | b'\r') => {
+    |                             ^^^^^
+
+warning: Constants in patterns are not yet supported.
+   --> src/de.rs:252:37
+    |
+252 |                 Some(b' ' | b'\n' | b'\t' | b'\r') => {
+    |                                     ^^^^^
+
+warning: Constants in patterns are not yet supported.
+   --> src/de.rs:252:45
+    |
+252 |                 Some(b' ' | b'\n' | b'\t' | b'\r') => {
+    |                                             ^^^^^
+
+warning: Constants in patterns are not yet supported.
+   --> src/de.rs:265:13
+    |
+265 |             b'n' => {
+    |             ^^^^
+
+warning: Constants in patterns are not yet supported.
+   --> src/de.rs:272:13
+    |
+272 |             b't' => {
+    |             ^^^^
+
+warning: Constants in patterns are not yet supported.
+   --> src/de.rs:279:13
+    |
+279 |             b'f' => {
+    |             ^^^^
+
+warning: Constants in patterns are not yet supported.
+   --> src/de.rs:286:13
+    |
+286 |             b'-' => {
+    |             ^^^^
+
+warning: Ranges in patterns are not yet supported.
+   --> src/de.rs:293:13
+    |
+293 |             b'0'..=b'9' => match self.parse_any_number(true) {
+    |             ^^^^^^^^^^^
+
+warning: Constants in patterns are not yet supported.
+   --> src/de.rs:297:13
+    |
+297 |             b'"' => {
+    |             ^^^^
+
+warning: Constants in patterns are not yet supported.
+   --> src/de.rs:305:13
+    |
+305 |             b'[' => de::Error::invalid_type(Unexpected::Seq, exp),
+    |             ^^^^
+
+warning: Constants in patterns are not yet supported.
+   --> src/de.rs:306:13
+    |
+306 |             b'{' => de::Error::invalid_type(Unexpected::Map, exp),
+    |             ^^^^
+
+warning: Constants in patterns are not yet supported.
+   --> src/de.rs:325:13
+    |
+325 |             b'-' => {
+    |             ^^^^
+
+warning: Ranges in patterns are not yet supported.
+   --> src/de.rs:329:13
+    |
+329 |             b'0'..=b'9' => tri!(self.parse_integer(true)).visit(visitor),
+    |             ^^^^^^^^^^^
+
+warning: Constants in patterns are not yet supported.
+   --> src/de.rs:357:18
+    |
+357 |             Some(b'-') => {
+    |                  ^^^^
+
+warning: Constants in patterns are not yet supported.
+   --> src/de.rs:387:18
+    |
+387 |             Some(b'-') => {
+    |                  ^^^^
+
+warning: Constants in patterns are not yet supported.
+   --> src/de.rs:414:13
+    |
+414 |             b'0' => {
+    |             ^^^^
+
+warning: Ranges in patterns are not yet supported.
+   --> src/de.rs:418:21
+    |
+418 |                     b'0'..=b'9' => Err(self.peek_error(ErrorCode::InvalidNumber)),
+    |                     ^^^^^^^^^^^
+
+warning: Ranges in patterns are not yet supported.
+   --> src/de.rs:422:17
+    |
+422 |             c @ b'1'..=b'9' => {
+    |                 ^^^^^^^^^^^
+
+warning: Ranges in patterns are not yet supported.
+   --> src/de.rs:424:31
+    |
+424 |                 while let c @ b'0'..=b'9' = tri!(self.peek_or_null()) {
+    |                               ^^^^^^^^^^^
+
+warning: Constants in patterns are not yet supported.
+   --> src/de.rs:465:13
+    |
+465 |             b'0' => {
+    |             ^^^^
+
+warning: Ranges in patterns are not yet supported.
+   --> src/de.rs:468:21
+    |
+468 |                     b'0'..=b'9' => Err(self.peek_error(ErrorCode::InvalidNumber)),
+    |                     ^^^^^^^^^^^
+
+warning: Ranges in patterns are not yet supported.
+   --> src/de.rs:472:17
+    |
+472 |             c @ b'1'..=b'9' => {
+    |                 ^^^^^^^^^^^
+
+warning: Ranges in patterns are not yet supported.
+   --> src/de.rs:477:29
+    |
+477 |                         c @ b'0'..=b'9' => {
+    |                             ^^^^^^^^^^^
+
+warning: Constants in patterns are not yet supported.
+   --> src/de.rs:505:13
+    |
+505 |             b'.' => ParserNumber::F64(tri!(self.parse_decimal(positive, significand, 0))),
+    |             ^^^^
+
+warning: Constants in patterns are not yet supported.
+   --> src/de.rs:506:13
+    |
+506 |             b'e' | b'E' => ParserNumber::F64(tri!(self.parse_exponent(positive, significand, 0))),
+    |             ^^^^
+
+warning: Constants in patterns are not yet supported.
+   --> src/de.rs:506:20
+    |
+506 |             b'e' | b'E' => ParserNumber::F64(tri!(self.parse_exponent(positive, significand, 0))),
+    |                    ^^^^
+
+warning: Constants in patterns are not yet supported.
+   --> src/de.rs:556:13
+    |
+556 |             b'e' | b'E' => self.parse_exponent(positive, significand, exponent),
+    |             ^^^^
+
+warning: Constants in patterns are not yet supported.
+   --> src/de.rs:556:20
+    |
+556 |             b'e' | b'E' => self.parse_exponent(positive, significand, exponent),
+    |                    ^^^^
+
+warning: Ranges in patterns are not yet supported.
+   --> src/de.rs:533:23
+    |
+533 |         while let c @ b'0'..=b'9' = tri!(self.peek_or_null()) {
+    |                       ^^^^^^^^^^^
+
+warning: Ranges in patterns are not yet supported.
+   --> src/de.rs:596:23
+    |
+596 |         while let c @ b'0'..=b'9' = tri!(self.peek_or_null()) {
+    |                       ^^^^^^^^^^^
+
+warning: Ranges in patterns are not yet supported.
+   --> src/de.rs:590:17
+    |
+590 |             c @ b'0'..=b'9' => (c - b'0') as i32,
+    |                 ^^^^^^^^^^^
+
+warning: Constants in patterns are not yet supported.
+   --> src/de.rs:570:13
+    |
+570 |             b'+' => {
+    |             ^^^^
+
+warning: Constants in patterns are not yet supported.
+   --> src/de.rs:574:13
+    |
+574 |             b'-' => {
+    |             ^^^^
+
+warning: Ranges in patterns are not yet supported.
+   --> src/de.rs:715:17
+    |
+715 |                 b'0'..=b'9' => {
+    |                 ^^^^^^^^^^^
+
+warning: Constants in patterns are not yet supported.
+   --> src/de.rs:721:17
+    |
+721 |                 b'.' => {
+    |                 ^^^^
+
+warning: Constants in patterns are not yet supported.
+   --> src/de.rs:724:17
+    |
+724 |                 b'e' | b'E' => {
+    |                 ^^^^
+
+warning: Constants in patterns are not yet supported.
+   --> src/de.rs:724:24
+    |
+724 |                 b'e' | b'E' => {
+    |                        ^^^^
+
+warning: Constants in patterns are not yet supported.
+   --> src/de.rs:844:13
+    |
+844 |             b'e' | b'E' => self.parse_exponent(positive, significand, exponent),
+    |             ^^^^
+
+warning: Constants in patterns are not yet supported.
+   --> src/de.rs:844:20
+    |
+844 |             b'e' | b'E' => self.parse_exponent(positive, significand, exponent),
+    |                    ^^^^
+
+warning: Ranges in patterns are not yet supported.
+   --> src/de.rs:839:19
+    |
+839 |         while let b'0'..=b'9' = tri!(self.peek_or_null()) {
+    |                   ^^^^^^^^^^^
+
+warning: Ranges in patterns are not yet supported.
+   --> src/de.rs:864:19
+    |
+864 |         while let b'0'..=b'9' = tri!(self.peek_or_null()) {
+    |                   ^^^^^^^^^^^
+
+warning: Constants in patterns are not yet supported.
+   --> src/de.rs:902:13
+    |
+902 |             b'-' => {
+    |             ^^^^
+
+warning: Ranges in patterns are not yet supported.
+   --> src/de.rs:906:13
+    |
+906 |             b'0'..=b'9' => self.parse_any_number(true),
+    |             ^^^^^^^^^^^
+
+warning: Constants in patterns are not yet supported.
+    --> src/de.rs:1055:18
+     |
+1055 |             Some(b':') => {
+     |                  ^^^^
+
+warning: Constants in patterns are not yet supported.
+    --> src/de.rs:1066:18
+     |
+1066 |             Some(b']') => {
+     |                  ^^^^
+
+warning: Constants in patterns are not yet supported.
+    --> src/de.rs:1070:18
+     |
+1070 |             Some(b',') => {
+     |                  ^^^^
+
+warning: Constants in patterns are not yet supported.
+    --> src/de.rs:1073:29
+     |
+1073 |                     Ok(Some(b']')) => Err(self.peek_error(ErrorCode::TrailingComma)),
+     |                             ^^^^
+
+warning: Constants in patterns are not yet supported.
+    --> src/de.rs:1084:18
+     |
+1084 |             Some(b'}') => {
+     |                  ^^^^
+
+warning: Constants in patterns are not yet supported.
+    --> src/de.rs:1088:18
+     |
+1088 |             Some(b',') => Err(self.peek_error(ErrorCode::TrailingComma)),
+     |                  ^^^^
+
+warning: Constants in patterns are not yet supported.
+    --> src/de.rs:1199:26
+     |
+1199 |                     Some(b':') => self.eat_char(),
+     |                          ^^^^
+
+warning: Constants in patterns are not yet supported.
+    --> src/de.rs:1193:26
+     |
+1193 |                     Some(b'"') => self.eat_char(),
+     |                          ^^^^
+
+warning: Constants in patterns are not yet supported.
+    --> src/de.rs:1157:26
+     |
+1157 |                     Some(b',') if accept_comma => {
+     |                          ^^^^
+
+warning: Constants in patterns are not yet supported.
+    --> src/de.rs:1161:26
+     |
+1161 |                     Some(b']') if frame == b'[' => {}
+     |                          ^^^^
+
+warning: Constants in patterns are not yet supported.
+    --> src/de.rs:1162:26
+     |
+1162 |                     Some(b'}') if frame == b'{' => {}
+     |                          ^^^^
+
+warning: Constants in patterns are not yet supported.
+    --> src/de.rs:1166:33
+     |
+1166 | ...                   b'[' => ErrorCode::ExpectedListCommaOrEnd,
+     |                       ^^^^
+
+warning: Constants in patterns are not yet supported.
+    --> src/de.rs:1167:33
+     |
+1167 | ...                   b'{' => ErrorCode::ExpectedObjectCommaOrEnd,
+     |                       ^^^^
+
+warning: Constants in patterns are not yet supported.
+    --> src/de.rs:1176:29
+     |
+1176 | ...                   b'[' => ErrorCode::EofWhileParsingList,
+     |                       ^^^^
+
+warning: Constants in patterns are not yet supported.
+    --> src/de.rs:1177:29
+     |
+1177 | ...                   b'{' => ErrorCode::EofWhileParsingObject,
+     |                       ^^^^
+
+warning: Constants in patterns are not yet supported.
+    --> src/de.rs:1107:17
+     |
+1107 |                 b'n' => {
+     |                 ^^^^
+
+warning: Constants in patterns are not yet supported.
+    --> src/de.rs:1112:17
+     |
+1112 |                 b't' => {
+     |                 ^^^^
+
+warning: Constants in patterns are not yet supported.
+    --> src/de.rs:1117:17
+     |
+1117 |                 b'f' => {
+     |                 ^^^^
+
+warning: Constants in patterns are not yet supported.
+    --> src/de.rs:1122:17
+     |
+1122 |                 b'-' => {
+     |                 ^^^^
+
+warning: Ranges in patterns are not yet supported.
+    --> src/de.rs:1127:17
+     |
+1127 |                 b'0'..=b'9' => {
+     |                 ^^^^^^^^^^^
+
+warning: Constants in patterns are not yet supported.
+    --> src/de.rs:1131:17
+     |
+1131 |                 b'"' => {
+     |                 ^^^^
+
+warning: Constants in patterns are not yet supported.
+    --> src/de.rs:1136:26
+     |
+1136 |                 frame @ (b'[' | b'{') => {
+     |                          ^^^^
+
+warning: Constants in patterns are not yet supported.
+    --> src/de.rs:1136:33
+     |
+1136 |                 frame @ (b'[' | b'{') => {
+     |                                 ^^^^
+
+warning: Constants in patterns are not yet supported.
+    --> src/de.rs:1228:13
+     |
+1228 |             b'.' => self.ignore_decimal(),
+     |             ^^^^
+
+warning: Constants in patterns are not yet supported.
+    --> src/de.rs:1229:13
+     |
+1229 |             b'e' | b'E' => self.ignore_exponent(),
+     |             ^^^^
+
+warning: Constants in patterns are not yet supported.
+    --> src/de.rs:1229:20
+     |
+1229 |             b'e' | b'E' => self.ignore_exponent(),
+     |                    ^^^^
+
+warning: Constants in patterns are not yet supported.
+    --> src/de.rs:1211:13
+     |
+1211 |             b'0' => {
+     |             ^^^^
+
+warning: Ranges in patterns are not yet supported.
+    --> src/de.rs:1213:24
+     |
+1213 |                 if let b'0'..=b'9' = tri!(self.peek_or_null()) {
+     |                        ^^^^^^^^^^^
+
+warning: Ranges in patterns are not yet supported.
+    --> src/de.rs:1217:13
+     |
+1217 |             b'1'..=b'9' => {
+     |             ^^^^^^^^^^^
+
+warning: Ranges in patterns are not yet supported.
+    --> src/de.rs:1218:27
+     |
+1218 |                 while let b'0'..=b'9' = tri!(self.peek_or_null()) {
+     |                           ^^^^^^^^^^^
+
+warning: Constants in patterns are not yet supported.
+    --> src/de.rs:1248:13
+     |
+1248 |             b'e' | b'E' => self.ignore_exponent(),
+     |             ^^^^
+
+warning: Constants in patterns are not yet supported.
+    --> src/de.rs:1248:20
+     |
+1248 |             b'e' | b'E' => self.ignore_exponent(),
+     |                    ^^^^
+
+warning: Ranges in patterns are not yet supported.
+    --> src/de.rs:1238:19
+     |
+1238 |         while let b'0'..=b'9' = tri!(self.peek_or_null()) {
+     |                   ^^^^^^^^^^^
+
+warning: Ranges in patterns are not yet supported.
+    --> src/de.rs:1269:19
+     |
+1269 |         while let b'0'..=b'9' = tri!(self.peek_or_null()) {
+     |                   ^^^^^^^^^^^
+
+warning: Ranges in patterns are not yet supported.
+    --> src/de.rs:1263:13
+     |
+1263 |             b'0'..=b'9' => {}
+     |             ^^^^^^^^^^^
+
+warning: Constants in patterns are not yet supported.
+    --> src/de.rs:1257:13
+     |
+1257 |             b'+' | b'-' => self.eat_char(),
+     |             ^^^^
+
+warning: Constants in patterns are not yet supported.
+    --> src/de.rs:1257:20
+     |
+1257 |             b'+' | b'-' => self.eat_char(),
+     |                    ^^^^
+
+warning: Constants in patterns are not yet supported.
+    --> src/de.rs:1397:13
+     |
+1397 |             b'n' => {
+     |             ^^^^
+
+warning: Constants in patterns are not yet supported.
+    --> src/de.rs:1402:13
+     |
+1402 |             b't' => {
+     |             ^^^^
+
+warning: Constants in patterns are not yet supported.
+    --> src/de.rs:1407:13
+     |
+1407 |             b'f' => {
+     |             ^^^^
+
+warning: Constants in patterns are not yet supported.
+    --> src/de.rs:1412:13
+     |
+1412 |             b'-' => {
+     |             ^^^^
+
+warning: Ranges in patterns are not yet supported.
+    --> src/de.rs:1416:13
+     |
+1416 |             b'0'..=b'9' => tri!(self.parse_any_number(true)).visit(visitor),
+     |             ^^^^^^^^^^^
+
+warning: Constants in patterns are not yet supported.
+    --> src/de.rs:1417:13
+     |
+1417 |             b'"' => {
+     |             ^^^^
+
+warning: Constants in patterns are not yet supported.
+    --> src/de.rs:1425:13
+     |
+1425 |             b'[' => {
+     |             ^^^^
+
+warning: Constants in patterns are not yet supported.
+    --> src/de.rs:1436:13
+     |
+1436 |             b'{' => {
+     |             ^^^^
+
+warning: Constants in patterns are not yet supported.
+    --> src/de.rs:1473:13
+     |
+1473 |             b't' => {
+     |             ^^^^
+
+warning: Constants in patterns are not yet supported.
+    --> src/de.rs:1478:13
+     |
+1478 |             b'f' => {
+     |             ^^^^
+
+warning: Constants in patterns are not yet supported.
+    --> src/de.rs:1528:13
+     |
+1528 |             b'"' => {
+     |             ^^^^
+
+warning: Constants in patterns are not yet supported.
+    --> src/de.rs:1634:13
+     |
+1634 |             b'"' => {
+     |             ^^^^
+
+warning: Constants in patterns are not yet supported.
+    --> src/de.rs:1642:13
+     |
+1642 |             b'[' => self.deserialize_seq(visitor),
+     |             ^^^^
+
+warning: Constants in patterns are not yet supported.
+    --> src/de.rs:1667:18
+     |
+1667 |             Some(b'n') => {
+     |                  ^^^^
+
+warning: Constants in patterns are not yet supported.
+    --> src/de.rs:1688:13
+     |
+1688 |             b'n' => {
+     |             ^^^^
+
+warning: Constants in patterns are not yet supported.
+    --> src/de.rs:1738:13
+     |
+1738 |             b'[' => {
+     |             ^^^^
+
+warning: Constants in patterns are not yet supported.
+    --> src/de.rs:1789:13
+     |
+1789 |             b'{' => {
+     |             ^^^^
+
+warning: Constants in patterns are not yet supported.
+    --> src/de.rs:1826:13
+     |
+1826 |             b'[' => {
+     |             ^^^^
+
+warning: Constants in patterns are not yet supported.
+    --> src/de.rs:1837:13
+     |
+1837 |             b'{' => {
+     |             ^^^^
+
+warning: Constants in patterns are not yet supported.
+    --> src/de.rs:1870:18
+     |
+1870 |             Some(b'{') => {
+     |                  ^^^^
+
+warning: Constants in patterns are not yet supported.
+    --> src/de.rs:1877:26
+     |
+1877 |                     Some(b'}') => {
+     |                          ^^^^
+
+warning: Constants in patterns are not yet supported.
+    --> src/de.rs:1885:18
+     |
+1885 |             Some(b'"') => visitor.visit_enum(UnitVariantAccess::new(self)),
+     |                  ^^^^
+
+warning: Constants in patterns are not yet supported.
+    --> src/de.rs:1947:18
+     |
+1947 |             Some(b']') => Err(self.de.peek_error(ErrorCode::TrailingComma)),
+     |                  ^^^^
+
+warning: Constants in patterns are not yet supported.
+    --> src/de.rs:1926:18
+     |
+1926 |             Some(b']') => {
+     |                  ^^^^
+
+warning: Constants in patterns are not yet supported.
+    --> src/de.rs:1929:18
+     |
+1929 |             Some(b',') if !self.first => {
+     |                  ^^^^
+
+warning: Constants in patterns are not yet supported.
+    --> src/de.rs:1994:18
+     |
+1994 |             Some(b'"') => seed.deserialize(MapKey { de: &mut *self.de }).map(Some),
+     |                  ^^^^
+
+warning: Constants in patterns are not yet supported.
+    --> src/de.rs:1995:18
+     |
+1995 |             Some(b'}') => Err(self.de.peek_error(ErrorCode::TrailingComma)),
+     |                  ^^^^
+
+warning: Constants in patterns are not yet supported.
+    --> src/de.rs:1973:18
+     |
+1973 |             Some(b'}') => {
+     |                  ^^^^
+
+warning: Constants in patterns are not yet supported.
+    --> src/de.rs:1976:18
+     |
+1976 |             Some(b',') if !self.first => {
+     |                  ^^^^
+
+warning: Constants in patterns are not yet supported.
+    --> src/de.rs:2156:22
+     |
+2156 |                 Some(b'"') => self.de.eat_char(),
+     |                      ^^^^
+...
+2169 |     deserialize_numeric_key!(deserialize_number, deserialize_number);
+     |     ---------------------------------------------------------------- in this macro invocation
+     |
+     = note: this warning originates in the macro `deserialize_numeric_key` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: Ranges in patterns are not yet supported.
+    --> src/de.rs:2149:22
+     |
+2149 |                 Some(b'0'..=b'9' | b'-') => {}
+     |                      ^^^^^^^^^^^
+...
+2169 |     deserialize_numeric_key!(deserialize_number, deserialize_number);
+     |     ---------------------------------------------------------------- in this macro invocation
+     |
+     = note: this warning originates in the macro `deserialize_numeric_key` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: Constants in patterns are not yet supported.
+    --> src/de.rs:2149:36
+     |
+2149 |                 Some(b'0'..=b'9' | b'-') => {}
+     |                                    ^^^^
+...
+2169 |     deserialize_numeric_key!(deserialize_number, deserialize_number);
+     |     ---------------------------------------------------------------- in this macro invocation
+     |
+     = note: this warning originates in the macro `deserialize_numeric_key` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: Constants in patterns are not yet supported.
+    --> src/de.rs:2156:22
+     |
+2156 |                 Some(b'"') => self.de.eat_char(),
+     |                      ^^^^
+...
+2195 |     deserialize_numeric_key!(deserialize_i128, deserialize_i128);
+     |     ------------------------------------------------------------ in this macro invocation
+     |
+     = note: this warning originates in the macro `deserialize_numeric_key` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: Ranges in patterns are not yet supported.
+    --> src/de.rs:2149:22
+     |
+2149 |                 Some(b'0'..=b'9' | b'-') => {}
+     |                      ^^^^^^^^^^^
+...
+2195 |     deserialize_numeric_key!(deserialize_i128, deserialize_i128);
+     |     ------------------------------------------------------------ in this macro invocation
+     |
+     = note: this warning originates in the macro `deserialize_numeric_key` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: Constants in patterns are not yet supported.
+    --> src/de.rs:2149:36
+     |
+2149 |                 Some(b'0'..=b'9' | b'-') => {}
+     |                                    ^^^^
+...
+2195 |     deserialize_numeric_key!(deserialize_i128, deserialize_i128);
+     |     ------------------------------------------------------------ in this macro invocation
+     |
+     = note: this warning originates in the macro `deserialize_numeric_key` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: Constants in patterns are not yet supported.
+    --> src/de.rs:2156:22
+     |
+2156 |                 Some(b'"') => self.de.eat_char(),
+     |                      ^^^^
+...
+2200 |     deserialize_numeric_key!(deserialize_u128, deserialize_u128);
+     |     ------------------------------------------------------------ in this macro invocation
+     |
+     = note: this warning originates in the macro `deserialize_numeric_key` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: Ranges in patterns are not yet supported.
+    --> src/de.rs:2149:22
+     |
+2149 |                 Some(b'0'..=b'9' | b'-') => {}
+     |                      ^^^^^^^^^^^
+...
+2200 |     deserialize_numeric_key!(deserialize_u128, deserialize_u128);
+     |     ------------------------------------------------------------ in this macro invocation
+     |
+     = note: this warning originates in the macro `deserialize_numeric_key` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: Constants in patterns are not yet supported.
+    --> src/de.rs:2149:36
+     |
+2149 |                 Some(b'0'..=b'9' | b'-') => {}
+     |                                    ^^^^
+...
+2200 |     deserialize_numeric_key!(deserialize_u128, deserialize_u128);
+     |     ------------------------------------------------------------ in this macro invocation
+     |
+     = note: this warning originates in the macro `deserialize_numeric_key` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: Constants in patterns are not yet supported.
+    --> src/de.rs:2221:13
+     |
+2221 |             b't' => {
+     |             ^^^^
+
+warning: Constants in patterns are not yet supported.
+    --> src/de.rs:2225:13
+     |
+2225 |             b'f' => {
+     |             ^^^^
+
+warning: Constants in patterns are not yet supported.
+    --> src/de.rs:2394:18
+     |
+2394 |             Some(b' ' | b'\n' | b'\t' | b'\r' | b'"' | b'[' | b']' | b'{' | b'}' | b',' | b':')
+     |                  ^^^^
+
+warning: Constants in patterns are not yet supported.
+    --> src/de.rs:2394:25
+     |
+2394 |             Some(b' ' | b'\n' | b'\t' | b'\r' | b'"' | b'[' | b']' | b'{' | b'}' | b',' | b':')
+     |                         ^^^^^
+
+warning: Constants in patterns are not yet supported.
+    --> src/de.rs:2394:33
+     |
+2394 |             Some(b' ' | b'\n' | b'\t' | b'\r' | b'"' | b'[' | b']' | b'{' | b'}' | b',' | b':')
+     |                                 ^^^^^
+
+warning: Constants in patterns are not yet supported.
+    --> src/de.rs:2394:41
+     |
+2394 |             Some(b' ' | b'\n' | b'\t' | b'\r' | b'"' | b'[' | b']' | b'{' | b'}' | b',' | b':')
+     |                                         ^^^^^
+
+warning: Constants in patterns are not yet supported.
+    --> src/de.rs:2394:49
+     |
+2394 |             Some(b' ' | b'\n' | b'\t' | b'\r' | b'"' | b'[' | b']' | b'{' | b'}' | b',' | b':')
+     |                                                 ^^^^
+
+warning: Constants in patterns are not yet supported.
+    --> src/de.rs:2394:56
+     |
+2394 |             Some(b' ' | b'\n' | b'\t' | b'\r' | b'"' | b'[' | b']' | b'{' | b'}' | b',' | b':')
+     |                                                        ^^^^
+
+warning: Constants in patterns are not yet supported.
+    --> src/de.rs:2394:63
+     |
+2394 |             Some(b' ' | b'\n' | b'\t' | b'\r' | b'"' | b'[' | b']' | b'{' | b'}' | b',' | b':')
+     |                                                               ^^^^
+
+warning: Constants in patterns are not yet supported.
+    --> src/de.rs:2394:70
+     |
+2394 |             Some(b' ' | b'\n' | b'\t' | b'\r' | b'"' | b'[' | b']' | b'{' | b'}' | b',' | b':')
+     |                                                                      ^^^^
+
+warning: Constants in patterns are not yet supported.
+    --> src/de.rs:2394:77
+     |
+2394 |             Some(b' ' | b'\n' | b'\t' | b'\r' | b'"' | b'[' | b']' | b'{' | b'}' | b',' | b':')
+     |                                                                             ^^^^
+
+warning: Constants in patterns are not yet supported.
+    --> src/de.rs:2394:84
+     |
+2394 |             Some(b' ' | b'\n' | b'\t' | b'\r' | b'"' | b'[' | b']' | b'{' | b'}' | b',' | b':')
+     |                                                                                    ^^^^
+
+warning: Constants in patterns are not yet supported.
+    --> src/de.rs:2394:91
+     |
+2394 |             Some(b' ' | b'\n' | b'\t' | b'\r' | b'"' | b'[' | b']' | b'{' | b'}' | b',' | b':')
+     |                                                                                           ^^^^
+
+warning: Constants in patterns are not yet supported.
+    --> src/de.rs:2433:21
+     |
+2433 |                     b'[' | b'"' | b'{' => true,
+     |                     ^^^^
+
+warning: Constants in patterns are not yet supported.
+    --> src/de.rs:2433:28
+     |
+2433 |                     b'[' | b'"' | b'{' => true,
+     |                            ^^^^
+
+warning: Constants in patterns are not yet supported.
+    --> src/de.rs:2433:35
+     |
+2433 |                     b'[' | b'"' | b'{' => true,
+     |                                   ^^^^
+
+warning: Constants in patterns are not yet supported.
+    --> src/ser.rs:1539:13
+     |
+1539 |             self::BB => CharEscape::Backspace,
+     |             ^^^^^^^^
+
+warning: Constants in patterns are not yet supported.
+    --> src/ser.rs:1540:13
+     |
+1540 |             self::TT => CharEscape::Tab,
+     |             ^^^^^^^^
+
+warning: Constants in patterns are not yet supported.
+    --> src/ser.rs:1541:13
+     |
+1541 |             self::NN => CharEscape::LineFeed,
+     |             ^^^^^^^^
+
+warning: Constants in patterns are not yet supported.
+    --> src/ser.rs:1542:13
+     |
+1542 |             self::FF => CharEscape::FormFeed,
+     |             ^^^^^^^^
+
+warning: Constants in patterns are not yet supported.
+    --> src/ser.rs:1543:13
+     |
+1543 |             self::RR => CharEscape::CarriageReturn,
+     |             ^^^^^^^^
+
+warning: Constants in patterns are not yet supported.
+    --> src/ser.rs:1544:13
+     |
+1544 |             self::QU => CharEscape::Quote,
+     |             ^^^^^^^^
+
+warning: Constants in patterns are not yet supported.
+    --> src/ser.rs:1545:13
+     |
+1545 |             self::BS => CharEscape::ReverseSolidus,
+     |             ^^^^^^^^
+
+warning: Constants in patterns are not yet supported.
+    --> src/ser.rs:1546:13
+     |
+1546 |             self::UU => CharEscape::AsciiControl(byte),
+     |             ^^^^^^^^
+
+thread 'rustc' panicked at lib/src/expression.rs:710:21:
+attempted to read from stolen value: rustc_middle::thir::Thir
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+warning: `serde_json` (lib) generated 143 warnings
+error: could not compile `serde_json` (lib); 143 warnings emitted

@@ -1,3 +1,16 @@
+# plan
+
+1. lift into coq with coq-of-rust
+cargo coq-of-rust > coq-of-rust.txt 2>&1
+1.1 implement the ai assistent api in coq
+that will use coq to check the results, then we will attack unimath.
+2. lift into unimath with unimath-of-coq to be written(in progress)
+3. prove json schema and results using unimath
+4. model your json with unimath
+5. use as grammar for llama.cpp with jsonschema generated or some menhir-gbnf notation 
+6. parse the results of the json with coq/unimath and prove results good or bad
+7. loss function is a complex result set of the failed coq proof with backtracking.
+
 # Serde JSON &emsp; [![Build Status]][actions] [![Latest Version]][crates.io] [![Rustc Version 1.36+]][rustc]
 
 [Build Status]: https://img.shields.io/github/actions/workflow/status/serde-rs/json/ci.yml?branch=master
